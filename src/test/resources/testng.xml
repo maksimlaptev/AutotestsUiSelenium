@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestsSuite" >
+
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="headless" value="yes"/>
+    <parameter name="pathdriver" value="src/test/resources/chromedriver.exe"/>
+
+    <test name="Mail" >
+        <classes >
+            <class name = "TestPage.TestMail.TestMailRU"/>
+        </classes>
+    </test>
+
+    <test name="SocialNetwork" >
+        <classes >
+            <class name = "TestPage.TestSocialNetwork.TestOK"/>
+        </classes>
+    </test>
+
+ </suite>
